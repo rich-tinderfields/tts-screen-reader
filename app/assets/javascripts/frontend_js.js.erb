@@ -1,0 +1,7 @@
+$(document).ready(function(){
+	$('.tts').click(function(){
+		var audio = new Audio();
+		audio.src = $(this).attr('href');
+		audio.play();
+	});
+});

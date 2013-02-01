@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @page.title %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @page.body %>
+
+
+</p>
+
+
+<%= link_to "go get mp3", page_go_get_mp3_path(@page, :params => {:text_field => "body"} ), :remote=>true, :class=>"tts" %>
+
+<%= link_to 'Edit', edit_page_path(@page) %> |
+<%= link_to 'Back', pages_path %>
